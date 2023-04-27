@@ -3,8 +3,6 @@ h4 {
     justify-content: center;
     text-align: center;
     margin: 0 auto;
-    /*margin-inline-start: 50px;
-    margin-inline-end: 50px;*/
 }
 
 /* Estilos para o header */
@@ -157,10 +155,17 @@ button:hover {
 }
 
 .image-section img {
+    width: 100%;
+    max-width: 580px;
+    padding: 50px;
+}
+
+/*
+.image-section img {
     max-width: 580px;
     max-height: 450px;
     padding: 50px;
-}
+}*/
 
 p {
     font-size: 14px;
@@ -375,7 +380,38 @@ tr:nth-child(even) {
 }
 
 /*Aplicando regras de media query para responsabilidade*/
+/*----------------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+    #container1 {
+        display: none;
+    }
 
-/*header*/
-@media (max-width: 600px) {    
+    .image-section {
+        max-width: 300px;
+        height: 300px;
+    }
+
+    .container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .text-section {
+        order: 2;
+    }
+
+    .image-section {
+        order: 1;
+    }
+
+    .image-section img {
+        max-width: 100%;
+        max-height: auto;
+        padding: 0;
+    }
+
+    nav a {
+        font-size: small;
+        padding: 0.05rem;
+    }
 }
