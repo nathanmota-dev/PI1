@@ -415,3 +415,38 @@ tr:nth-child(even) {
         padding: 0.05rem;
     }
 }
+
+/*menu*/
+
+@media screen and (max-width: 600px) {
+    nav {
+        height: auto;
+    }
+
+    nav ul {
+        display: block;
+        width: 100%;
+    }
+
+    nav li {
+        display: block;
+        border-bottom: 1px solid #ccc;
+    }
+
+    nav li:last-child {
+        border-bottom: none;
+    }
+
+    nav li a {
+        display: block;
+    }
+
+    #div-primeira {
+        /*padding: 60px;*/
+        margin-top: 150px;
+    }
+
+    .gallery-item {
+        margin: 0px;
+    }
+}
