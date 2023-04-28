@@ -271,7 +271,12 @@ button[type="reset"]:hover {
     border-radius: 50%;
 }
 
-#sobre-nos {
+#sobre-nos-1 {
+    width: 75%;
+    height: 75%;
+}
+
+#sobre-nos-2{
     width: 75%;
     height: 75%;
 }
